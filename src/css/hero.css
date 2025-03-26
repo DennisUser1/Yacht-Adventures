@@ -252,14 +252,12 @@ a .wave::after {
     transform-style: preserve-3d;
     transform: perspective(1000px);
   }
-
   .hero-text-list {
     transform: translateZ(60px);
   }
   .hero-clients-box {
     transform: translateZ(60px);
   }
-
   .man-photo-wrapper {
     transform: translateZ(60px);
   }
@@ -267,7 +265,7 @@ a .wave::after {
 
 /**
   |============================
-  | Paralax end
+  | Parallax end
   |============================
 */
 
@@ -458,7 +456,7 @@ a .wave::after {
   }
 
   .hero-main-text {
-    font-family: DM Sans;
+    font-family: DM Sans, sans-serif;
     font-size: 60px;
     font-style: normal;
     font-weight: 500;
