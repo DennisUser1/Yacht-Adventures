@@ -1,6 +1,6 @@
 .animatable {
   /* initially hide animatable objects */
-  overflow: hidden;
+  /* overflow: hidden; */
 
   /* initially pause animatable objects their animations */
   -webkit-animation-play-state: paused;
