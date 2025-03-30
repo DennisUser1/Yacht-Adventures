@@ -1,0 +1,207 @@
+.services-content {
+    position: relative;
+}
+
+.services-btn {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+
+    position: absolute;
+    padding: 14px 28px;
+    border-radius: 60px;
+    border-style: none;
+    z-index: 1;
+    left: 24px;
+    bottom: 24px;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .services-item {
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .services-list {
+        gap: 32px;
+    }
+    .services-item:first-child img {
+        width: 704px;
+    }
+    .services-item:nth-child(2) img {
+        width: 400px;
+    }
+    .services-item:last-child img {
+        width: 380px;
+    }
+    .services-item:nth-child(2) {
+        align-self: flex-end;
+    }
+
+    .services-btn {
+        left: 32px;
+    }
+
+    .services-item:last-child {
+        padding-left: 32px;
+        align-self: flex-start;
+    }
+}
+
+@media (min-width: 1280px) {
+    .services-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px;
+    }
+
+    .services-item:first-child img {
+        width: 712px;
+    }
+
+    .services-item:nth-child(2) img {
+        width: 440px;
+    }
+
+    .services-item:last-child img {
+        width: 436px;
+    }
+
+    .services-item:last-child {
+        padding-left: 372px;
+    }
+}
+
+/**
+  |============================
+  | Flip-cards
+  |============================
+*/
+
+.front {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition-duration: 0.5s;
+	transition-property: transform, opacity;
+	transform: rotateY(0deg);
+}
+
+.back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition-duration: 0.5s;
+	transition-property: transform, opacity;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+    padding: 180px 62px;
+    color: var(--dark-blue);
+	background: var(--white-text);
+    border-radius: 40px;
+    box-shadow:
+		rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	z-index: -1;
+}
+
+.fishing {
+    padding: 90px 32px;
+}
+
+.flip-title {
+    font-size: 36px;
+    font-weight: 500;
+	line-height: 1.1;
+	margin-bottom: 8px;
+}
+
+.fish-ttl {
+    font: 28px;
+}
+
+.flip-text {
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+.fish-txt {
+    font-size: 16px;
+}
+
+@media (max-width: 1279px) {
+    .back {
+        padding: 50px 30px;
+    }
+    .services-content.flipped .front {
+		transform: rotateY(180deg);
+    }
+    .services-content.flipped .back {
+        z-index: 1;
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+
+    .flip-title {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .flip-text {
+        font-size: 16px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 767px) {
+    .back {
+        padding: 20px 25px;
+    }
+
+    .flip-title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .flip-text {
+        font-size: 16px;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 1280px) {
+    .services-content:hover > .front {
+        transform: rotateY(180deg);
+    }
+    .services-content:hover > .back {
+        z-index: 1;
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+@media (max-width: 365px) {
+    .flip-text {
+        font-size: 14px;
+    }
+
+    .back {
+        padding: 15px 20px;
+    }
+
+    .flip-title {
+		margin-bottom: 7px;
+	}
+}
