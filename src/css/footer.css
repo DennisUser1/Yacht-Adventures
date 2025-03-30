@@ -1,0 +1,254 @@
+.footer {
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 14px;
+  }
+}
+
+.line {
+  width: 335px;
+  height: 1px;
+  background-color: rgba(246, 245, 239, 0.2);
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .line {
+    width: 704px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .line {
+    width: 1216px;
+  }
+}
+
+.footer-container {
+  max-width: 375px;
+  padding-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    max-width: 768px;
+    padding-top: 64px;
+    display: flex;
+    position: relative;
+    height: 280px;
+    margin-bottom: auto;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-container {
+    max-width: 1280px;
+    height: 284px;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-logo {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer-logo {
+    margin-right: 129px;
+  }
+}
+
+.link-footer-logo {
+  color: var(--white-text);
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 118%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-footer-logo:hover,
+.link-footer-logo:focus {
+  color: var(--light-green);
+}
+
+@media only screen and (min-width: 768px) {
+  .link-footer-logo {
+    font-size: 18px;
+    line-height: 1.18;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-navigation {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer-navigation {
+    margin-right: 143px;
+  }
+}
+
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-nav-list {
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-nav-list {
+    flex-direction: row;
+  }
+}
+
+.footer-nav-link {
+  color: var(--white-text);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 118%;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: var(--light-green);
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-network {
+    margin-bottom: 40px;
+  }
+}
+
+.footer-title {
+  color: var(--white-text);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.footer-network-list {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-network-list {
+    gap: 16px;
+  }
+}
+
+.footer-network-icon {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 7px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid var(--light-gray);
+  fill: #f6f5ef;
+
+  transition: border-color 450ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-network-icon:hover,
+.footer-network-icon:focus {
+  border: 1px solid var(--light-green);
+  fill: var(--light-green);
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-network-icon {
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.footer-info {
+  color: var(--light-gray);
+  text-align: center;
+  font-size: 14px;
+  line-height: 118%;
+  letter-spacing: 0.42px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-info > a {
+    margin-left: 32px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-info {
+    display: flex;
+    gap: 14px;
+    font-size: 12px;
+    letter-spacing: 0.36px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-information {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-information {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-information {
+    padding-top: 132px;
+  }
+}

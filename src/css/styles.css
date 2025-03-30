@@ -7,7 +7,9 @@
 @import url("./reset.css");
 @import url("./header.css");
 @import url("./hero.css");
+@import url("./about-block.css");
 
+@import url("./footer.css");
 @import url("./btn-to-top.css");
 
 :root {
