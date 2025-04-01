@@ -48,6 +48,54 @@
 
 /* yachts block ellipses: */
 
+.yachts-block__title::before {
+  width: 200px;
+  height: 200px;
+  top: -38%;
+  left: -6%;
+  background-color: rgba(145, 175, 186, 0.6);
+}
+
+.yachts-block__title::after {
+  width: 90px;
+  height: 90px;
+  top: 16%;
+  left: 79%;
+  background-color: rgba(166, 169, 178, 0.3);
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .yachts-block__title::before {
+    width: 370px;
+    height: 370px;
+    left: -2%;
+    top: -17%;
+  }
+
+  .yachts-block__title::after {
+    width: 290px;
+    height: 290px;
+    left: 61%;
+    top: -2%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .yachts-block__title::before {
+    width: 390px;
+    height: 390px;
+    left: 9%;
+    top: -11%;
+  }
+
+  .yachts-block__title::after {
+    width: 300px;
+    height: 300px;
+    left: 59%;
+    top: -5%;
+  }
+}
+
 /* services block ellipse: */
 
 .services-item:nth-child(1)::before {

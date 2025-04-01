@@ -204,9 +204,9 @@
   }
 }
 
-.yachts-block__card-list {
+/* .yachts-block__card-list {
   margin-bottom: 24px;
-}
+} */
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .yachts-block__card-list {
@@ -344,9 +344,10 @@
 
 /* swiper */
 .yachts-block__card-list {
-  max-width: 704px;
+  max-width: 320px;
   max-height: 469px;
   padding: 0;
+  margin-bottom: 24px;
 }
 .yachts-block__buttons-wrap {
   position: relative;
@@ -375,6 +376,10 @@
   }
 }
 @media (min-width: 768px) {
+  .yachts-block__card-list {
+    max-width: 704px;
+  }
+
   .yachts-swiper {
     height: 508px;
   }

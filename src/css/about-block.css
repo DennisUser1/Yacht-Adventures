@@ -191,7 +191,8 @@
 @media only screen and (min-width: 768px) {
   .about-img-last {
     position: absolute;
-    top: -120px;
+    /* top: -120px; */
+    top: 870px;
     left: 365px;
   }
   .about-img-first {
