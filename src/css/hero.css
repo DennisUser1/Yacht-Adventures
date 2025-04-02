@@ -1,0 +1,503 @@
+/**
+  |============================
+  | text part Hero
+  |============================
+*/
+
+.hero-text-box {
+  padding: 40px 0;
+}
+
+.hero-main-text {
+  color: var(--white-text);
+  font-family: DM Sans, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+  margin-bottom: 14px;
+}
+
+.hero-span {
+  background: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: DM Sans, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+
+.hero-text {
+  color: var(--white-text);
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+/**
+  |============================
+  | START WAVE
+  |============================
+*/
+
+.hero-set-btn {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-set-btn {
+    gap: 11px;
+  }
+}
+
+.hero-btn {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 60px;
+  font-size: 14px;
+  padding: 14px 28px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-btn span {
+    font-size: 18px;
+  }
+}
+
+.started-btn {
+  /* width: 130px; */
+  transition: box-shadow 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.explore-btn {
+  border: 1px solid var(--white-text);
+  transition: box-shadow 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover .wave {
+  top: -120px;
+}
+
+.started-btn:hover {
+  box-shadow: 0 0 4rem var(--light-green);
+}
+.explore-btn:hover {
+  box-shadow: 0 0 4rem var(--light-green);
+}
+
+.hero-btn span {
+  font-family: DM Sans, sans-serif;
+  position: relative;
+  z-index: 1;
+  color: white;
+  letter-spacing: -0.045em;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.wave {
+  z-index: -1;
+}
+
+
+.started-btn .wave {
+  width: 200px;
+  height: 200px;
+  background-color: var(--dark-blue);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: -20px;
+  top: -58px;
+  transition: 0.4s;
+}
+
+.explore-btn .wave {
+  width: 200px;
+  height: 200px;
+  background-color: var(--light-green);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: -30px;
+  top: -62px;
+  transition: 0.4s;
+}
+
+a .wave::before,
+a .wave::after {
+  width: 200%;
+  height: 200%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 40%;
+  transform: translate(-50%, -75%);
+}
+
+.started-btn .wave::before {
+  border-radius: 45%;
+  background-color: rgb(104 105 111 / 50%);
+  animation: wave 5s linear infinite;
+}
+
+.explore-btn .wave::before {
+  border-radius: 45%;
+  background-color: var(--dark-blue);
+  animation: wave 5s linear infinite;
+}
+
+.started-btn .wave::after {
+  border-radius: 40%;
+  background-color: var(--light-green);
+  animation: wave 10s linear infinite;
+}
+.explore-btn .wave::after {
+  border-radius: 40%;
+  background-color: rgb(17 19 31 / 50%);
+  animation: wave 10s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+/* END */
+
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    padding: 0 32px;
+  }
+
+  .hero-text-box {
+    padding: 64px 0 0 0;
+  }
+
+  .hero-main-text {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+    margin-bottom: 16px;
+  }
+
+  .hero-span {
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .hero-text-box {
+    margin-left: 217px;
+    padding-top: 132px;
+  }
+}
+
+/**
+  |============================
+  | img part Hero
+  |============================
+*/
+
+.hero-image-section {
+  position: relative;
+  max-width: 100%;
+  padding-top: 64px;
+}
+
+.hero-image-container {
+  position: relative;
+  background-image: url(/images/hero-block/mask-group.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 427px;
+}
+
+/**
+  |============================
+  | PARALLAX
+  |============================
+*/
+
+@media only screen and (min-width: 1280px) {
+  .hero-image-container {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+  }
+  .hero-text-list {
+    transform: translateZ(60px);
+  }
+  .hero-clients-box {
+    transform: translateZ(60px);
+  }
+  /* .man-photo-wrapper {
+    transform: translateZ(60px);
+  } */
+}
+
+/**
+  |============================
+  | Parallax end
+  |============================
+*/
+
+.hero-clients-box {
+  position: absolute;
+  width: 135px;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
+}
+
+.hero-clients-list {
+  display: flex;
+  margin-bottom: 13px;
+}
+
+.hero-clients-li {
+  margin-left: -7px;
+  z-index: -1;
+}
+
+.hero-clients-li-item {
+  z-index: -2;
+}
+
+.hero-clients-img {
+  width: 48px;
+  height: 48px;
+  background: transparent;
+}
+
+.hero-clients-text {
+  color: var(--dark-blue);
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero-img-ceo {
+  position: absolute;
+  border-radius: 24px;
+  width: 133px;
+  top: 30px;
+  right: -5px;
+  z-index: 3;
+}
+
+.hero-main-img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 110px;
+  background: transparent;
+  margin: 0 auto;
+}
+
+.hero-text-list {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 14px;
+  align-items: center;
+  bottom: 50px;
+  left: 24px;
+  right: 24px;
+}
+
+.hero-big-text {
+  color: var(--dark-blue);
+  font-family: DM Sans, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+}
+
+.hero-little-text {
+  color: var(--dark-blue);
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.045em;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-text-box {
+    margin: 0;
+  }
+
+  .hero-clients-box {
+    top: 32px;
+    left: 32px;
+  }
+
+  .hero-clients-img {
+    width: 56px;
+  }
+
+  .hero-image-section {
+    width: 100%;
+  }
+
+  .hero-image-container {
+    width: 426px;
+    height: 598px;
+    background-image: url(/images/hero-block/maskgrup-tab@x1.png);
+    background-repeat: no-repeat;
+  }
+
+  .hero-blur {
+    position: absolute;
+    top: 56px;
+    left: 85px;
+    width: 142px;
+    height: 142px;
+    transform: rotate(-45.074deg);
+    flex-shrink: 0;
+    background-color: var(--ellipse);
+    opacity: 0.6;
+    filter: blur(90px);
+  }
+
+  .hero-main-img {
+    width: 378px;
+    height: 221px;
+    bottom: 122px;
+    left: 24px;
+    margin-bottom: 22px;
+  }
+
+  .hero-img-ceo {
+    width: 233px;
+    right: -143px;
+    top: 24px;
+  }
+
+  .hero-text-list {
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    bottom: 67px;
+  }
+
+  .hero-big-text {
+    font-size: 60px;
+    line-height: 1.1;
+    /* 66px */
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+  }
+
+  .hero-little-text {
+    font-size: 18px;
+    line-height: 1.1;
+    /* 19.8px */
+    letter-spacing: -0.045em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-container {
+    justify-content: space-between;
+  }
+  .hero-image-section {
+    width: 100%;
+  }
+
+  .hero-image-container {
+    background-image: url(/images/hero-block/maskgrup-tab@x1.png);
+  }
+
+  .hero-section {
+    padding-bottom: 164px;
+  }
+
+  .hero-text-box {
+    margin-bottom: 32px;
+    margin-left: 217px;
+  }
+
+  .hero-main-text {
+    font-family: DM Sans, sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+    margin-bottom: 16px;
+  }
+
+  .hero-span {
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media (max-width: 374px) {
+  .hero-image-container {
+    background-image: url(/images/hero-block/mask-group-mobile.png);
+    height: 385px;
+  }
+
+  .hero-main-img {
+    width: 80%;
+    bottom: 125px;
+  }
+
+  .hero-text-list {
+    right: 55px;
+  }
+}
