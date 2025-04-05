@@ -5,14 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/yacht-adventures/",
-    "preview": "vite preview",
-    "deploy": "vite build --base=/yacht-adventures/ && gh-pages -d ../dist"
+    "build": "vite build --base=/yacht-adventures/ --emptyOutDir",
+    "preview": "vite preview"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gh-pages": "^6.3.0",
     "glob": "^8.1.0",
     "vite": "^5.3.5"
   },
