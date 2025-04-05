@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build --base=/yacht-adventures/",
     "preview": "vite preview",
-    "deploy": "vite build --base=/yacht-adventures/ && gh-pages -d dist"
+    "deploy": "vite build --base=/yacht-adventures/ && gh-pages -d ../dist"
   },
   "author": "",
   "license": "ISC",
