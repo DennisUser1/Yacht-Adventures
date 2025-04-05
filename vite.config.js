@@ -5,6 +5,7 @@ import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
   root: 'src',
+  base: '/yacht-adventures/',
   build: {
     rollupOptions: {
       input: glob.sync('./src/*.html'),
